@@ -1,0 +1,173 @@
+.section1 {
+    background-color: rgb(245, 240, 230);
+    background-size: auto;
+    display: inline-block;
+    max-width: 100%;
+}   
+
+.section1 img{
+    max-width: 100%;
+    height: auto;
+}
+
+.section2 {
+    background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
+    color: white;
+    display: inline-block;
+}
+
+.section2 img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.section4 {
+    background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
+    color: white;
+    display: inline-block;
+    width: 100%;
+}
+form {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+label {
+    font-size: 18px;
+    color: white;
+    margin-right: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px; /* Adjust width to match the example */
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0d1b36; /* Darker blue on hover */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #182b49;
+    color: white
+  }
+
+  /* Style the navbar */
+#navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+    font-size: 28px;
+    width: 400px
+  }
+  
+  #navbar img {
+    width: 400px;
+    height: auto;
+  }
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+  #navbar a:hover {
+    color: white
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+
+  .section3 {
+    background-color: rgb(245, 240, 230); /* Light beige background */
+    padding: 20px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+    gap: 25px; /* 25px gap between columns */
+    justify-content: center; /* Centers the grid */
+    padding: 20px;
+}
+
+.box {
+    background-color: #182b49; /* Dark blue background */
+    color: white; /* White font */
+    padding: 20px;
+    max-height: 500px; /* Maximum height of 500px */
+    overflow-y: scroll; /* Scrollable content */
+    border-radius: 8px; /* Optional: Adds a little rounding to the corners */
+}
+
+/* Media query for screens smaller than 800px */
+@media screen and (max-width: 800px) {
+    /* Hide the navbar links, but keep the logo visible */
+    #navbar ul {
+        display: none; /* Hide the navigation links */
+    }
+
+    /* Scale the logo for smaller screens */
+    #navbar img {
+        max-width: 75%; /* Logo scales to 75% */
+        height: auto;
+    }
+
+    /* Adjust header font size */
+    h2 {
+        font-size: 24px; /* Smaller header font size */
+    }
+
+    /* Adjust paragraph font size */
+    p {
+        font-size: 20px; /* Smaller paragraph font size */
+    }
+
+    /* Change grid layout to 2 columns */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2-column grid for smaller screens */
+    }
+}
